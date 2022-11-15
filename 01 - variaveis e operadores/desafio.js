@@ -9,6 +9,5 @@ let combustivelNecessario = distanciaKm / consumoKm;
 // Calcula o valor do Combustível necessário da viagem
 let valorViagem = combustivelNecessario * precoCombustivel;
 
-// Exite no terminal
+// Exibe no terminal
 console.log(`O valor da viagem de ${distanciaKm}km é de R$ ${valorViagem.toFixed(2)}.`);
-
