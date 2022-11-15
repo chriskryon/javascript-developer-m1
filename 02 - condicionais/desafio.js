@@ -25,7 +25,3 @@ if (tipoCombustivel === "Etanol") {
 
 // Exibe no terminal
 console.log(`O valor da viagem de ${distanciaKm}km para o combustível ${tipoCombustivel} é de R$ ${valorViagem.toFixed(2)}.`);
-
-
-
-
