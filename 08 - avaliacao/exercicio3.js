@@ -20,3 +20,12 @@
 //             2050.00
 
 const { gets, print } = require('./funcoes-auxiliares-ex3');
+const valorBruto = gets();
+const adicionalBeneficios = gets();
+let imposto;
+
+if (valorBruto >= 0 && valorBruto <= 1100) imposto = 0.05;
+else if(valorBruto > 1100 && valorBruto <= 2500) imposto = 0.1;
+else imposto = 0.15;
+
+print(`${valorBruto - (valorBruto * imposto) + adicionalBeneficios}`);
