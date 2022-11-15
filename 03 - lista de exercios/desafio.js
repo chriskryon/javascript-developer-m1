@@ -9,6 +9,16 @@
     - Média entre 5 e 7, recuperação;
     - Média acima de 7, passou de semestre;
 */
+let nota1 = 4, nota2 = 5, nota3 = 5;
+let media = (nota1 + nota2 + nota3) / 3;
+let situacaoMedia;
+
+if (media >= 5 && media < 7) situacao = "Recuperação";
+else if (media >= 7) situacao = "Passou de Semestre";
+else situacaoMedia = "Reprovação";
+console.log(`A média do aluno foi de ${media.toFixed(2)} e a situação é: ${situacaoMedia}`);
+
+console.log('--------------------------------------');
 
 /*
     2) O IMC – Indice de Massa Corporal é um critério da Organização Mundial de Saúde para dar uma indicação sobre a condição de peso de uma pessoa adulta. 
@@ -25,6 +35,20 @@
     - Entre 30 e 40 Obeso;
     - Acima de 40 Obsesidade Grave;
 */
+let peso = 30;
+let altura = 1.6;
+let imc = peso / (altura * altura);
+let situacaoImc;
+
+if (imc >= 18.5 && imc < 25) situacaoImc = 'Peso Normal';
+else if (imc >= 25 && imc < 30) situacaoImc = 'Acima do Peso';
+else if (imc >= 30 && imc < 40) situacaoImc = 'Obeso';
+else if (imc > 40) situacaoImc = 'Obesidade Grave';
+else situacaoImc = 'Abaixo do peso';
+
+console.log(`O IMC é de ${imc.toFixed(2)} e a situação é: ${situacaoImc}`);
+
+console.log('--------------------------------------');
 
 /*
     3) Elabore um algoritmo que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta e a escolha da condição de pagamento. 
@@ -36,3 +60,15 @@
     - Em duas vezes, preço normal de etiqueta sem juros;
     - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 */
+let precoNormal = 100;
+let condicaoDePagamento = 4;
+let valorFinal;
+
+if (condicaoDePagamento === 1) valorFinal = precoNormal * 0.9;
+else if (condicaoDePagamento === 2) valorFinal = precoNormal * 0.85;
+else if (condicaoDePagamento === 3) valorFinal = precoNormal;
+else if (condicaoDePagamento === 4) valorFinal = precoNormal + (precoNormal * 0.1);
+
+console.log(`O produto no valor de R$ ${precoNormal} com a condição de pagamento de código ${condicaoDePagamento} ficará no valor de R$ ${valorFinal}.`);
+
+console.log('--------------------------------------');
